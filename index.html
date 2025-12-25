@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedType | Professional Typing Speed Test</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-keyboard"></i>
+                    <span>SpeedType Pro</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#test"><i class="fas fa-tachometer-alt"></i> Test</a></li>
+                        <li><a href="#features"><i class="fas fa-star"></i> Features</a></li>
+                        <li><a href="#tips"><i class="fas fa-lightbulb"></i> Tips</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero" id="home">
+            <img src="https://plus.unsplash.com/premium_photo-1682430553117-f1d0edb35a14?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fHww" alt="Professional typing workspace" class="hero-image">
+            <h1>Master Your Typing Speed</h1>
+            <p>Transform your typing skills with our comprehensive, professional-grade typing test platform. Whether you're a student, professional, or coding enthusiast, SpeedType Pro offers the most accurate and engaging way to measure and improve your typing performance.</p>
+            <p>Join thousands of users who have already improved their typing speed by an average of 40% using our scientifically-designed exercises and real-time feedback system.</p>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose SpeedType Pro?</h2>
+                    <p>In today's digital age, typing proficiency is not just a skill—it's a necessity. Whether you're writing emails, coding, creating content, or taking notes, your typing speed directly impacts your productivity and efficiency.</p>
+                    <p>SpeedType Pro is designed by typing experts and educational professionals to provide the most comprehensive typing assessment available online. Our platform uses advanced algorithms to analyze your typing patterns, identify weaknesses, and provide personalized recommendations for improvement.</p>
+                    <p>Unlike other typing tests, we focus on real-world scenarios with diverse text types including business correspondence, technical documentation, creative writing, and programming code. This ensures that your practice translates directly to improved performance in your daily tasks.</p>
+                </div>
+                <div>
+                    <img src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D" alt="Person typing on laptop with analytics dashboard" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="features">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 20px; font-size: clamp(1.8rem, 4vw, 2.5rem);">Powerful Features for Serious Typists</h2>
+                <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 40px; font-size: clamp(1rem, 2.5vw, 1.1rem);">Our comprehensive suite of features is designed to help you achieve your typing goals faster and more effectively than ever before.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Real-time Analytics</h3>
+                        <p>Get instant feedback on your typing speed, accuracy, and error patterns with our advanced real-time analysis system.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI-Powered Insights</h3>
+                        <p>Our machine learning algorithms identify your unique typing patterns and provide personalized improvement strategies.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Cross-Platform</h3>
+                        <p>Practice anywhere, anytime with our fully responsive design that works perfectly on desktop, tablet, and mobile devices.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Privacy First</h3>
+                        <p>Your typing data is processed locally and never stored on our servers, ensuring complete privacy and security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="test-container" id="test">
+            <div class="test-header">
+                <h2><i class="fas fa-stopwatch"></i> Professional Typing Test</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>WPM</h3>
+                        <p id="wpm">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Accuracy</h3>
+                        <p id="accuracy">0%</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Time</h3>
+                        <p id="time">60s</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Errors</h3>
+                        <p id="errors">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="backspace-warning" id="backspace-warning">
+                <i class="fas fa-exclamation-triangle"></i> Backspace is currently disabled! Focus on accuracy over speed.
+            </div>
+
+            <div class="difficulty-selector">
+                <button class="difficulty-btn active" data-difficulty="easy">Beginner</button>
+                <button class="difficulty-btn" data-difficulty="medium">Intermediate</button>
+                <button class="difficulty-btn" data-difficulty="hard">Advanced</button>
+            </div>
+
+            <div class="sample-text" id="sample-text">
+                The quick brown fox jumps over the lazy dog. This sentence contains all the letters in the English alphabet. Typing is an essential skill in today's digital world, and improving your speed and accuracy can save you hours of work every day.
+            </div>
+
+            <textarea class="typing-area" id="typing-area" placeholder="Click here and start typing to begin your test. The timer will start automatically when you begin typing..."></textarea>
+
+            <div class="controls">
+                <div class="control-group">
+                    <button class="btn btn-primary" id="restart-btn">
+                        <i class="fas fa-sync-alt"></i> Restart Test
+                    </button>
+                    <button class="btn btn-warning" id="toggle-backspace">
+                        <i class="fas fa-ban"></i> Disable Backspace
+                    </button>
+                </div>
+                <div class="control-group">
+                    <button class="btn btn-outline" id="time-30">30s</button>
+                    <button class="btn btn-outline" id="time-60">60s</button>
+                    <button class="btn btn-outline" id="time-120">2min</button>
+                    <button class="btn btn-outline" id="time-300">5min</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-options">
+            <h2><i class="fas fa-book-open"></i> Diverse Practice Materials</h2>
+            <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 40px; font-size: clamp(1rem, 2.5vw, 1.1rem);">Challenge yourself with various text types to build comprehensive typing skills for any situation.</p>
+            
+            <div class="option-cards">
+                <div class="option-card" data-text="The quick brown fox jumps over the lazy dog. This sentence contains all the letters in the English alphabet. Typing is an essential skill in today's digital world. Practice makes perfect, and consistent effort leads to remarkable improvement in both speed and accuracy.">
+                    <i class="fas fa-font"></i>
+                    <h3>Basic English</h3>
+                    <p>Standard sentences with common words to build your foundational typing skills and muscle memory.</p>
+                </div>
+                <div class="option-card" data-text="The cosmos is all that is or ever was or ever will be. Our feeblest contemplations of the Cosmos stir us—there is a tingling in the spine, a catch in the voice, a faint sensation of a distant memory, as if we were falling from a great height. We know we are approaching the greatest of mysteries.">
+                    <i class="fas fa-atom"></i>
+                    <h3>Scientific Literature</h3>
+                    <p>Complex vocabulary from scientific texts to challenge advanced typists and expand technical terminology.</p>
+                </div>
+                <div class="option-card" data-text="function calculateTypingSpeed(characters, timeInMinutes, errors) { const grossWPM = (characters / 5) / timeInMinutes; const netWPM = grossWPM - (errors / timeInMinutes); return Math.max(0, Math.round(netWPM)); } const result = calculateTypingSpeed(350, 5, 12); console.log(`Your net WPM is: ${result}`);">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming Code</h3>
+                    <p>Real code snippets with special characters, brackets, and syntax to improve coding typing skills.</p>
+                </div>
+                <div class="option-card" data-text="The quarterly financial report demonstrates significant growth across all market segments. Revenue increased by 23% year-over-year, while operational efficiency improved through strategic cost management initiatives. Our diversified portfolio continues to deliver sustainable returns for stakeholders and investors.">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business Communication</h3>
+                    <p>Professional business terminology and formal language patterns for workplace typing proficiency.</p>
+                </div>
+                <div class="option-card" data-text="The Renaissance period, spanning from the 14th to the 17th century, marked a profound cultural transformation in Europe. This era witnessed unprecedented advancements in art, science, and literature. Leonardo da Vinci, Michelangelo, and Shakespeare emerged as iconic figures whose contributions continue to influence modern civilization.">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Historical Texts</h3>
+                    <p>Historical passages with proper nouns, dates, and formal language for comprehensive practice.</p>
+                </div>
+                <div class="option-card" data-text="Mitochondria, often called the powerhouse of the cell, generate ATP through oxidative phosphorylation. The electron transport chain, located in the inner mitochondrial membrane, facilitates the production of adenosine triphosphate via chemiosmotic coupling. This process is fundamental to cellular metabolism and energy homeostasis.">
+                    <i class="fas fa-dna"></i>
+                    <h3>Medical & Biology</h3>
+                    <p>Scientific terminology and complex biological concepts for specialized professional practice.</p>
+                </div>
+                <div class="option-card" data-text="In the realm of artificial intelligence and machine learning, neural networks have revolutionized data processing capabilities. Deep learning algorithms utilize multiple layers of interconnected nodes to identify patterns and make predictions. These technologies are transforming industries from healthcare to autonomous vehicles.">
+                    <i class="fas fa-robot"></i>
+                    <h3>Technology & AI</h3>
+                    <p>Modern technology terminology and concepts for staying current with digital transformation.</p>
+                </div>
+                <div class="option-card" data-text="The art of creative writing involves crafting compelling narratives that resonate with readers on emotional and intellectual levels. Through vivid imagery, dynamic characters, and engaging dialogue, authors transport audiences to new worlds and perspectives. Every word choice matters in creating memorable literary experiences.">
+                    <i class="fas fa-feather-alt"></i>
+                    <h3>Creative Writing</h3>
+                    <p>Literary passages with descriptive language and varied sentence structures for creative professionals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section" id="tips">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 20px; font-size: clamp(1.8rem, 4vw, 2.5rem);">Expert Typing Tips</h2>
+                <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 40px; font-size: clamp(1rem, 2.5vw, 1.1rem);">Master these proven techniques used by professional typists and competitive typing champions worldwide.</p>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4><i class="fas fa-hand-paper"></i> Proper Hand Position</h4>
+                        <p>Keep your wrists straight and floating above the keyboard. Your fingers should curve naturally over the home row keys (ASDF for left hand, JKL; for right hand).</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4><i class="fas fa-eye"></i> Don't Look at Keys</h4>
+                        <p>Train yourself to type without looking at the keyboard. This develops muscle memory and significantly increases your typing speed over time.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4><i class="fas fa-heartbeat"></i> Maintain Rhythm</h4>
+                        <p>Focus on consistent rhythm rather than speed bursts. Steady, rhythmic typing is more efficient and less error-prone than irregular fast typing.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4><i class="fas fa-bullseye"></i> Accuracy First</h4>
+                        <p>Prioritize accuracy over speed initially. It's better to type slowly and correctly than fast with many errors that require correction.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4><i class="fas fa-clock"></i> Regular Practice</h4>
+                        <p>Practice for 15-30 minutes daily rather than long, infrequent sessions. Consistent practice builds muscle memory more effectively.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4><i class="fas fa-chair"></i> Ergonomic Setup</h4>
+                        <p>Maintain good posture with feet flat on the floor, back straight, and monitor at eye level to prevent fatigue and injury.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-keyboard"></i>
+                    <span>SpeedType Pro</span>
+                </div>
+                <p class="footer-description">
+                    SpeedType Pro is the premier online typing test platform, trusted by professionals, students, and typing enthusiasts worldwide. Our mission is to help everyone achieve their typing potential through innovative technology and proven methodologies.
+                </p>
+                <p class="footer-description">
+                    Whether you're preparing for a career that requires fast typing, looking to improve your productivity, or simply want to challenge yourself, SpeedType Pro provides the tools and insights you need to succeed.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1FMticXGVe/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rajat_agarwal_18?igsh=MTNpbTNjbGU3cXM3bw==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rajat-agarwal-0943b6326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/919887328620" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">© 2025 SpeedType Pro. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Results Modal -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <h2><i class="fas fa-trophy"></i> Test Complete!</h2>
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <h3>Words Per Minute</h3>
+                    <p id="modal-wpm">0</p>
+                </div>
+                <div class="modal-stat">
+                    <h3>Accuracy Rate</h3>
+                    <p id="modal-accuracy">0%</p>
+                </div>
+                <div class="modal-stat">
+                    <h3>Characters Typed</h3>
+                    <p id="modal-chars">0</p>
+                </div>
+                <div class="modal-stat">
+                    <h3>Total Errors</h3>
+                    <p id="modal-errors">0</p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="modal-restart">
+                    <i class="fas fa-sync-alt"></i> Try Again
+                </button>
+                <button class="btn btn-outline" id="modal-share">
+                    <i class="fas fa-share-alt"></i> Share Results
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" id="dark-mode-toggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
